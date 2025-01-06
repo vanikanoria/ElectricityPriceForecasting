@@ -1,4 +1,4 @@
-Forecasting Electricity Prices of New York Residential Sector
+# Forecasting Electricity Prices of New York Residential Sector
 
 Project Overview
 
