@@ -16,6 +16,7 @@ This project focuses on analyzing and predicting electricity prices in New York 
 	  •	State, Sector
 	  •	Number of Customers, Price, Revenue, Sales
 	•	Weather Data: Monthly weather statistics for NYC, including temperature, precipitation, wind speed, and atmospheric pressure from the Meteostat API.
+ 	•	Macroeconomic Data from FRED: Annual Resident Population and Real Median Household Income
 
 ## Key Components
 
@@ -34,10 +35,10 @@ This project focuses on analyzing and predicting electricity prices in New York 
 	•	Adding weather data as covariates for enhanced prediction accuracy.
 
 ### 4. Modeling
-	•	ARIMA Models: Automatically selecting optimal parameters using auto_arima.
 	•	XGBoost Regressor: Leveraging gradient boosting for predictions.
 	•	Conducting hyperparameter tuning using GridSearchCV.
 	•	Performance evaluation using metrics such as MAE, MSE, and MAPE.
+ 	•	Wrote a function to predicting while evaluating rolling, lag and decomposition features on a recurring basis
 
 ### 5. Visualization
 	•	Visualizing price trends by sector and state using line plots.
@@ -59,6 +60,7 @@ pip install pandas numpy matplotlib seaborn statsmodels scipy pmdarima xgboost s
 	2.	Download Data or Pull from Kaggle:
 	•	Place clean_data.csv in the working directory.
 	•	Fetch weather data via Meteostat API.
+	•	Fetch macroeconomic data from FRED.
 	3.	Run the Notebook:
 	•	Ensure the environment matches the notebook setup (e.g., Python 3.10+).
 	•	Execute the cells sequentially for data preprocessing, EDA, and modeling.
@@ -66,7 +68,7 @@ pip install pandas numpy matplotlib seaborn statsmodels scipy pmdarima xgboost s
 ## Future Enhancements
 	•	Extend analysis to include real-time electricity price updates.
 	•	Develop an interactive dashboard for stakeholders.
-	•	Incorporate additional external factors such as economic indicators or grid demand.
+	•	Incorporate more external factors.
 
 Contributors
 
